@@ -220,18 +220,63 @@
 // validateUsr('asd43 34')//, false
 // validateUsr('asd4334')
 
-function drawStairs(n) {
-  let res = '';
-  let x = ' '
-  let num = 0;
-  while(num < n) {
-    
-    res +=  'I\n';
-    num++;
-    res += ' '.repeat(num)
-    
-  }
-  
-  console.log(res);
-}
-drawStairs(6);
+// function drawStairs(n) {
+//   let res = '';
+//   let x = ' '
+//   let num = 0;
+//   while(num < n) {
+//     res +=  'I\n';
+//     num++;
+//     res += ' '.repeat(num)
+//   }
+//   console.log(res);
+// }
+// drawStairs(6);
+
+// function isPythagoreanTriple(integers) {
+//   let arr = integers.sort(function(a, b){return a-b});
+//   console.log(arr);
+//   let one = arr[0]**2 + arr[1]**2;
+//   let two = arr[2]**2;
+//   console.log(one, two);
+//   if(one === two) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// isPythagoreanTriple([5, 4, 3])//, true);
+// isPythagoreanTriple([3, 5, 9])//, false);
+
+// function uefaEuro2016(teams, scores){
+//   if(scores[0] > scores[1]) {
+//     let res = `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
+//     console.log(res);
+//     //return res;
+//   } else if(scores[0] < scores[1]) {
+//     let res = `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+//     console.log(res);
+//     //return res;
+//   } else if(scores[0] == scores[1]) {
+//     let res = `At match ${teams[0]} - ${teams[1]}, teams played draw.`
+//     console.log(res);
+//     //return res
+// }
+// }
+// uefaEuro2016(['Germany', 'Ukraine'], [2, 0])//, "At match Germany - Ukraine, Germany won!");
+// uefaEuro2016(['Belgium', 'Italy'], [0, 2])//, "At match Belgium - Italy, Italy won!");
+// uefaEuro2016(['Portugal', 'Iceland'], [1, 1])//, "At match Portugal - Iceland, teams played draw.");
+
+// function abbrevName(name){
+//   let arr = name.split(' ');
+//   //console.log(arr);
+//   let one = arr[0];
+//   let two = arr[1];
+//   //console.log(one[0]);
+//   let res = `${one[0]}.${two[0]}`;
+//   console.log(res.toUpperCase());
+//   return res
+// }
+// abbrevName("sam harris")//, "S.H");
+// abbrevName("Patrick Feenan")//, "P.F");
+// abbrevName("Evan Cole")//, "E.C");
