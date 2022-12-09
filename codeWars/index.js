@@ -280,3 +280,41 @@
 // abbrevName("sam harris")//, "S.H");
 // abbrevName("Patrick Feenan")//, "P.F");
 // abbrevName("Evan Cole")//, "E.C");
+
+// function oddCount(n) {
+//   let arr = [];
+//   for(let i = 1; i < n; i++) {
+//     //console.log(i)
+//     if(i % 2 !== 0) {
+//       arr.push(i)
+//     }
+//   }
+//   console.log(arr.length);
+//   return arr.length
+// }
+// oddCount(15), 7
+
+function combine(...obj) {
+  obj.reduce((res, Object) => {
+    for(let key in Object) {
+      if(res[key]) {
+        res[key] +=Object
+      } else {
+        res[key] = Object[key]
+      }
+    }
+  }, {})
+}
+
+
+
+// const combine = (...objects) =>
+//   objects.reduce((result, object) => {
+//     for (const key in object) {
+//       if (result[key]) {
+//         result[key] += object[key]
+//       } else result[key] = object[key]
+//     }
+
+//     return result
+//   }, {})
