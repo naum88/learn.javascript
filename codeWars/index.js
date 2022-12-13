@@ -294,17 +294,17 @@
 // }
 // oddCount(15), 7
 
-function combine(...obj) {
-  obj.reduce((res, Object) => {
-    for(let key in Object) {
-      if(res[key]) {
-        res[key] +=Object
-      } else {
-        res[key] = Object[key]
-      }
-    }
-  }, {})
-}
+// function combine(...obj) {
+//   obj.reduce((res, Object) => {
+//     for(let key in Object) {
+//       if(res[key]) {
+//         res[key] +=Object
+//       } else {
+//         res[key] = Object[key]
+//       }
+//     }
+//   }, {})
+// }
 
 
 
