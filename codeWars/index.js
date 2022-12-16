@@ -306,8 +306,6 @@
 //   }, {})
 // }
 
-
-
 // const combine = (...objects) =>
 //   objects.reduce((result, object) => {
 //     for (const key in object) {
@@ -315,6 +313,68 @@
 //         result[key] += object[key]
 //       } else result[key] = object[key]
 //     }
-
 //     return result
 //   }, {})
+
+// function nbDig(n, d) {
+//   let arr= [];
+//   let count = 0;
+//   for(let i = 0; i <= n; i++) {
+//     arr.push(i*i);
+//   }
+//   //console.log(arr);
+//   let arrNew = arr.join('').split('');
+//   //console.log(arrNew);
+//   for(let j = 0; j < arrNew.length; j++) {
+//     if(arrNew[j] == d) {
+//       //console.log(arrNew[j]);
+//       count++
+//     }
+//   }
+//   console.log(count);
+//   return count
+// }
+// nbDig(10, 1) //4
+
+// function findMissing(arr1, arr2) {
+//   let newArr1 = arr1.sort((a, b) => a - b);
+//   let newArr2 = arr2.sort((a, b) => a - b);
+//   for(let i = 0; i < newArr1.length; i++) {
+//     for(let j = 0; j < newArr2.length; j++) {
+//       if(newArr1[i] != newArr2[j]) {
+//         console.log(newArr2[j]);
+//       }
+//     }
+//   }
+// }
+// findMissing([9, 1, 2, 3], [1, 3])//, 2);
+
+// function getDecimal(n){
+//   let num = Math.abs(n);
+//   //console.log(num);
+//   let res = 0;
+//   if(Number.isInteger(num)) {
+//     console.log(0);
+//     return 0;
+//   } else {
+//     res = num - Math.floor(num);
+//     console.log(+res.toFixed(1));
+//     return +res.toFixed(2);
+//   }
+// }
+// getDecimal(1.2);
+// getDecimal(-1.2);
+// getDecimal(1)
+
+// function maxTriSum(numbers){
+//   let num = [...new Set(numbers)];
+//   //console.log(num);
+//   let numSort = num.sort(function(a, b) {
+//     return b - a;
+//   });
+//   console.log(numSort);
+//   let res = numSort[0] + numSort[1] +numSort[2];
+//   return res;
+// }
+// maxTriSum([3,2,6,8,2,3])//,17);
+// maxTriSum([-3,-27,-4,-2,-27,-2])//,-9);
