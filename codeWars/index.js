@@ -378,3 +378,86 @@
 // }
 // maxTriSum([3,2,6,8,2,3])//,17);
 // maxTriSum([-3,-27,-4,-2,-27,-2])//,-9);
+
+// function whoseBicycle(diary1, diary2, diary3) {
+//   let sumOne = 0;
+//   let sumTwo = 0;
+//   let sumThree = 0;
+//   for(let grade of Object.values(diary1)) {
+//     sumOne += grade;
+//   }
+//   for(let grade of Object.values(diary2)) {
+//     sumTwo += grade;
+//   }
+//   for(let grade of Object.values(diary3)) {
+//     sumThree += grade;
+//   }
+//   console.log(sumOne, sumThree, sumTwo);
+//   if(sumOne > sumTwo && sumOne > sumThree) {
+//     return 'I need to buy a bicycle for my first son.'
+//   } else if(sumOne < sumTwo && sumTwo > sumThree) {
+//     return 'I need to buy a bicycle for my second son.'
+//   } else if(sumOne < sumThree && sumTwo < sumThree) {
+//     return 'I need to buy a bicycle for my third son.'
+//   } else if(sumOne == sumTwo && sumOne < sumThree) {
+//     return 'I need to buy a bicycle for my third son.' //+
+//   } else if(sumOne == sumTwo && sumOne > sumThree) {
+//     return 'I need to buy a bicycle for my second son.'
+//   } else if(sumOne == sumThree && sumOne < sumTwo) {
+//     return 'I need to buy a bicycle for my second son.'
+//   } else if(sumOne == sumThree && sumOne > sumTwo) {
+//     return 'I need to buy a bicycle for my third son.'
+//   } else if(sumOne == sumThree && sumThree == sumTwo) {
+//     return 'I need to buy a bicycle for my third son.'
+//   } else if(sumTwo == sumThree && sumTwo < sumOne) {
+//     return 'I need to buy a bicycle for my first son.' //+
+//   } else if(sumTwo == sumThree && sumTwo > sumOne) {
+//     return 'I need to buy a bicycle for my third son.'
+//   } 
+// }
+// whoseBicycle(
+//   {
+//     'algebra': 6,
+//     'history': 7,
+//     'physics': 8,
+//     'geography': 9,
+//     'chemistry': 10
+//   },
+//   {
+//     'algebra':6,
+//     'history': 7,
+//     'physics': 8,
+//     'geography': 9,
+//     'chemistry': 10
+//   },
+//   {
+//     'algebra': 6,
+//     'history': 7,
+//     'physics': 8,
+//     'geography': 9,
+//     'chemistry': 10
+//   }
+// ) 
+
+function nicknameGenerator(name){
+  let arr = name.split('');
+  //console.log(arr);
+  if(arr.length == 3) {
+    console.log('Error: Name too short');
+    return 'Error: Name too short';
+  }
+  if(arr[2] != 'a' || arr[2] != 'e' || arr[2] != 'i' || arr[2] != 'o' || arr[2] != 'u') { //"aeiou"
+    let res = arr.slice(0, 3).join('');
+    //console.log(res);
+    return res;
+  } else {
+    let res = arr.slice(0, 4).join('');
+    return res;
+  }
+}
+nicknameGenerator("Jimmy")//, "Jim");
+nicknameGenerator("Samantha")//, "Sam");
+nicknameGenerator("Sam")//, "Error: Name too short");
+nicknameGenerator("Kayne")//, "Kay", "'y' is not a vowel");
+nicknameGenerator("Melissa")//, "Mel");
+nicknameGenerator("James")//, "Jam");
