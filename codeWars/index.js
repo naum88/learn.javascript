@@ -439,25 +439,64 @@
 //   }
 // ) 
 
-function nicknameGenerator(name){
-  let arr = name.split('');
-  //console.log(arr);
-  if(arr.length == 3) {
-    console.log('Error: Name too short');
-    return 'Error: Name too short';
-  }
-  if(arr[2] != 'a' || arr[2] != 'e' || arr[2] != 'i' || arr[2] != 'o' || arr[2] != 'u') { //"aeiou"
-    let res = arr.slice(0, 3).join('');
-    //console.log(res);
-    return res;
-  } else {
-    let res = arr.slice(0, 4).join('');
-    return res;
-  }
-}
-nicknameGenerator("Jimmy")//, "Jim");
-nicknameGenerator("Samantha")//, "Sam");
-nicknameGenerator("Sam")//, "Error: Name too short");
-nicknameGenerator("Kayne")//, "Kay", "'y' is not a vowel");
-nicknameGenerator("Melissa")//, "Mel");
-nicknameGenerator("James")//, "Jam");
+// function nicknameGenerator(name){
+//   let arr = name.split('');
+//   //console.log(arr);
+//   if(arr.length < 4) {
+//     console.log('Error: Name too short');
+//     return 'Error: Name too short';
+//   } else if(name[2] == 'a' || name[2] == 'e' || name[2] == 'i' || name[2] == 'o' || name[2] == 'u') {
+//     //console.log(arr[2]);
+//     let res = arr.slice(0, 4).join('');
+//     console.log(res);
+//     return res;
+//   } else {
+//       let res = arr.slice(0, 3).join('');
+//       console.log(res);
+//       return res;
+//   }
+// }
+// nicknameGenerator("Jieemy")//, "Jim");
+// //nicknameGenerator("Samantha")//, "Sam");
+// nicknameGenerator("Sam")//, "Error: Name too short");
+// //nicknameGenerator("Kayne")//, "Kay", "'y' is not a vowel");
+// nicknameGenerator("Melissa")//, "Mel");
+// //nicknameGenerator("James")//, "Jam");
+
+// function sortMyString(S) {
+//   let arr = S.split('');
+//   let odd = [];
+//   let even = [];
+//   //console.log(arr);
+//   for(let i = 0; i < arr.length; i++) {
+//     if(i % 2 === 0) {
+//       odd.push(arr[i]);
+//     } else {
+//       even.push(arr[i]);
+//     }
+//   }
+//   console.log(odd);
+//   console.log(even);
+//   let res = odd.join('') + ' ' + even.join('');
+//   console.log(res);
+//   return res
+// }
+// sortMyString("CodeWars")//, "CdWr oeas");
+// sortMyString("YCOLUE'VREER")//, "YOU'RE CLEVER");   
+
+// function isPowerOfTwo(n){
+//   let num = Math.log2(n);
+//   console.log(num.toFixed(2));
+//   if(num == 1) {
+//     return true
+//   }
+//   if(num.toFixed(2) % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+
+// }
+// isPowerOfTwo(2)//, true)
+// isPowerOfTwo(4096)//, true)
+// isPowerOfTwo(5)//, false)
