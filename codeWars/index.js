@@ -500,3 +500,44 @@
 // isPowerOfTwo(2)//, true)
 // isPowerOfTwo(4096)//, true)
 // isPowerOfTwo(5)//, false)
+
+// let List = [
+//   {'4': 'dog' }, {'2': 'took'}, {'3': 'his'}, 
+//   {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'} 
+//  ];
+//  function sentence(List) {
+//   let arrSort = List.sort((a, b) => Object.keys(a) - Object.keys(b)).map(e => Object.values(e)).join(' ');
+//   console.log(arrSort);
+// }
+// sentence(List);
+
+// function minSum(arr) {
+//   let sum = 0;
+//   let newArr = arr.sort((a, b) => a - b);
+//   for(let i = 0; i < newArr.length / 2; i++) {
+//     sum += newArr[i] * newArr[newArr.length - 1 - i];
+//     //console.log(`sum += ${newArr[i]} * ${newArr[newArr.length - 1 - i]}`);
+//   }
+//   //console.log(sum);
+//   return sum;
+// }
+// minSum([5,4,2,3])//, 22);
+// minSum([12,6,10,26,3,24])//, 342);
+// minSum([9,2,8,7,5,4,0,6])//, 74);
+
+// function vowelOne(s){
+//   let arr = s.toLowerCase().split('');
+//   let resArr = [];
+//   //console.log(arr);
+//   for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] === 'a' || arr[i] === 'e' || arr[i] === 'i' || arr[i] === 'o' || arr[i] === 'u') { //aeiou
+//       resArr.push(1);
+//     } else {
+//       resArr.push(0)
+//     }
+//   }
+//   console.log(resArr.join(''));
+//   return resArr.join('');
+// }
+// vowelOne( "vowelOne" )//, "01010101" );
+// vowelOne( "123, arou" )//, "000001011" );
