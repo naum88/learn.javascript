@@ -541,3 +541,30 @@
 // }
 // vowelOne( "vowelOne" )//, "01010101" );
 // vowelOne( "123, arou" )//, "000001011" );
+
+// function reverseWords(str){
+//   let arr = str.split(' ').reverse().join(' ');
+//   console.log(arr);
+//   return arr; // reverse those words
+// }
+// reverseWords("yoda doesn't speak like this" )//,  "this like speak doesn't yoda")
+
+// function dataReverse(data) {
+//   let dataNewArr = [];
+//   for(let i = 0; i < data.length; i= i +8) {
+//     dataNewArr.push(...data.slice(i, i +8))
+//     dataNewArr.push('/')
+//   }
+//   //console.log(dataNewArr.join('').split('/').reverse().join(''));
+//   let dataNewArrRes = dataNewArr.join('').split('/').reverse().join('');
+//   let res = [];
+//   for(let i = 0; i < dataNewArrRes.length; i++) {
+//     res.push(+dataNewArrRes[i]);
+//   }
+//   //console.log(res);
+//   //console.log([1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1]);
+//   return res;
+// }
+// dataReverse([1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]);//[1,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1]
+
+
