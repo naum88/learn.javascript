@@ -1,0 +1,26 @@
+.accordion-header {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.active,
+.accordion-header:hover {
+	background-color: #ccc;
+}
+
+.accordion-body {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
+.accordion-panel.accordion-expanded > .accordion-body {
+	display: block;
+}
