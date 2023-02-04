@@ -667,3 +667,45 @@
 //   [ 7, 8, 9 ],
 //  ]);
 
+// function strCount(obj){
+//   let arr = [];
+//   let count = 0;
+//   for (var key in obj) {
+//     arr.push(obj[key]);
+//   }
+//   //console.log(arr);
+//   let newArr = arr.reduce((acc, val) => acc.concat(val), []); 
+//   console.log(newArr);
+//   for(let i = 0; i <= newArr.length; i++) {
+//     if(typeof newArr[i] === 'string') {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+//   return count;
+// }
+// strCount({
+//   first: "1",
+//   second: "2",
+//   third: false,
+//   fourth: ["anytime",2,3,4],
+//   fifth:  null
+//   }) //returns 3
+
+// var countBits = function(n) {
+//   let count = 0;
+//   let num = n.toString(2).split('')
+//   console.log(num);
+//   for(let i = 0; i < num.length; i++) {
+//     if(num[i] == 1) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+//   return count;
+// };
+// countBits(0)//, 0);
+// countBits(4)//, 1);
+// countBits(7)//, 3);
+// countBits(9)//, 2);
+// countBits(10)//, 2);
