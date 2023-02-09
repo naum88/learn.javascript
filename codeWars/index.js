@@ -709,3 +709,104 @@
 // countBits(7)//, 3);
 // countBits(9)//, 2);
 // countBits(10)//, 2);
+
+// function nearestSq(n){
+//   let sq = Math.pow(Math.round(Math.sqrt(n)), 2);
+//   console.log(sq);
+//   return sq;
+// }
+// nearestSq(1)//, 1, "nearestSq(1) = 1");
+// nearestSq(2)//, 1, "nearestSq(2) = 1");
+// nearestSq(10)//, 9, "nearestSq(10) = 9");
+// nearestSq(111)//, 121, "nearestSq(111) = 121");
+// nearestSq(9999)//, 10000, "nearestSq(9999) = 10000");
+
+// function addLength(str) {
+//   let arr = str.split(' ');
+//   //console.log(arr);
+//   let res = [];
+//   for(let i = 0; i < arr.length; i++) {
+//     let l = arr[i].length;
+//     //console.log(l);
+//     res.push(`${arr[i]} ${l}`)
+//   }
+//   console.log(res);
+//   return res;
+// }
+// addLength('you will win')//,["you 3", "will 4", "win 3"]
+// addLength("apple ban") //--> ["apple 5", "ban 3"]
+
+// var whatTimeIsIt = function(angle) {
+//   if(angle === 0 || angle === 360) {
+//     return "12:00"
+//   }
+//   let mins = angle / 2;
+//   let h = Math.floor(mins / 60);
+//   let m = Math.floor(mins % 60);
+//   if(h == 0) {
+//     h = '12';
+//   }
+//   if(h < 10) {
+//     h = '0' + h;
+//   }
+//   if(m < 10) {
+//     m = '0' + m;
+//   }
+//   return h+':'+m
+// }
+// whatTimeIsIt(0)//, "12:00");
+// whatTimeIsIt(90)//, "03:00");
+// whatTimeIsIt(180)//, "06:00");
+// whatTimeIsIt(270)//, "09:00");
+// whatTimeIsIt(360)//, "12:00");   
+
+// function toWeirdCase(str){
+//   let arr = str.split(' ');
+//   let newArr = [];
+//   console.log(arr);
+//   for(let i = 0; i < arr.length; i++) {
+//     if(i > 0) {
+//       newArr.push('+');
+//     }
+//     //console.log(arr[i]);
+//     for(let j = 0; j < arr[i].length; j++) {
+//       // newArr.push(' ');
+//       //console.log(arr[i][j]);
+//       if(j % 2 == 0) {
+//         newArr.push(arr[i][j].toUpperCase());
+//       } else {
+//         newArr.push(arr[i][j]);
+//       }
+//       // console.log(arr[i][j]);
+//     }
+//   }
+//   console.log(newArr.join(''));
+//   let res = newArr.join('').split('+').join(' ');
+//   console.log(res);
+//   return res;
+// }
+// toWeirdCase( "String" );//=> returns "StRiNg"
+// toWeirdCase( "Weird string case" );//=> returns "WeIrD StRiNg CaSe"
+
+// function likes(names) {
+//   let num = names.length;
+//   //console.log(num);
+//   if(num === 0) {
+//     return 'no one likes this';
+//   } else if(num === 1) {
+//     //console.log(names[0]);
+//     return `${names[0]} likes this`;
+//   } else if(num === 2) {
+//     return`${names[0]} and ${names[1]} like this`;
+//   } else if(num === 3) {
+//     return`${names[0]}, ${names[1]} and ${names[2]} like this`;
+//   } else if(num > 3) {
+//     //console.log(`${num-2}`);
+//     return`${names[0]}, ${names[1]} and ${num-2} others like this`;
+//   }
+// }
+// likes([])//, 'no one likes this');
+// likes(['Peter'])//, 'Peter likes this');
+// likes(['Jacob', 'Alex'])//, 'Jacob and Alex like this');
+// likes(['Max', 'John', 'Mark'])//, 'Max, John and Mark like this');
+// likes(['Alex', 'Jacob', 'Mark', 'Max'])//, 'Alex, Jacob and 2 others like this');
