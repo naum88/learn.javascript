@@ -156,3 +156,104 @@
 // }
 // checkCoupon('123','123','September 5, 2014','October 1, 2014')//, true);
 // checkCoupon('123a','123','September 10, 2014','October 1, 2014')//, false);
+
+// function getLengthOfMissingArray(arrayOfArrays) {
+//   if(arrayOfArrays == null) return 0
+// if(arrayOfArrays == [] || arrayOfArrays.length == 0) return 0
+//   let arr = [];
+//   for(let i = 0; i < arrayOfArrays.length; i++) {
+//     let numLength = arrayOfArrays[i].length;
+//     arr.push(numLength);
+//   }
+//   //console.log(arr);
+//   let res = []
+//   let arrSort = arr.sort((a, b) => a - b);
+//   console.log(arrSort);
+//   for(let j = 0; j < arrSort.length; j++) {
+//     if((arrSort[j] +1) !== arrSort[j+1]) {
+//       //console.log(arrSort[j] +1); 
+//       res.push(arrSort[j] +1);
+//       break;
+//     }
+//   }
+//   let result = +res
+//   console.log(result);
+//   return result;
+
+// }
+// getLengthOfMissingArray([[], [ 1, 2, ], [ 4, 5, 1, 1 ], [ 1,2 ], [ 5, 6, 7, 8, 9 ]] )//, 3);
+// getLengthOfMissingArray([ [ 5, 2, 9 ], [ 4, 5, 1, 1 ], [ 1 ], [ 5, 6, 7, 8, 9 ]] )//, 2);
+// getLengthOfMissingArray([ [ null ], [ null, null, null ] ] )//, 2);
+// getLengthOfMissingArray([ [ 'a', 'a', 'a' ], [ 'a', 'a' ], [ 'a', 'a', 'a', 'a' ], [ 'a' ], [ 'a', 'a', 'a', 'a', 'a', 'a' ]] )//, 5);
+// getLengthOfMissingArray([ ])//, 0);
+// getLengthOfMissingArray([[4],
+//   [],
+//   [4, 2, 3],
+//   [1, 2, 3, 0],
+//   [3, 0, 3, 4, 2, 1],
+//   [4, 0, 4, 3, 1]]);
+// getLengthOfMissingArray([[],
+//   [2, 0, 3],
+//   [2, 2],
+//   [3],
+//   [1, 3, 0, 3],
+//   [1, 3, 3, 1, 3],
+//   [1, 3, 0, 1, 3, 3, 3, 1],
+//   [3, 1, 0, 1, 2, 0, 3, 2, 2, 4],
+//   [1, 1, 3, 1, 4, 2, 3],
+//   [2, 1, 0, 4, 4, 2, 4, 1, 4],
+//   [2, 0, 1, 1, 3, 4, 4, 4, 4, 2, 4]])
+
+// function getLengthOfMissingArray(arrayOfArrays) {
+//   let arr = [];
+//   for(let i = 0; i < arrayOfArrays.length; i++) {
+//     if(arrayOfArrays === null || arrayOfArrays[i] === null || arrayOfArrays[i].length === null) {
+//       return 0;
+//     }
+//     arr.push(arrayOfArrays[i].length);
+//   }
+//   arr.sort((a, b) => a - b)
+//   console.log(arr);
+//   for(let j = 0; j <arr.length; j++) {
+//     if(arr[j] + 1 !== arr[j+ 1]) {
+//       console.log(arr[j] +1);
+//       return arr[j]+1;  
+//     }
+//   }
+//   return 0;
+// }
+// getLengthOfMissingArray([[], [ 1, 2, ], [ 4, 5, 1, 1 ], [ 1,2 ], [ 5, 6, 7, 8, 9 ]] )//, 3);
+// getLengthOfMissingArray([ [ 5, 2, 9 ], [ 4, 5, 1, 1 ], [ 1 ], [ 5, 6, 7, 8, 9 ]] )//, 2);
+// getLengthOfMissingArray([ [ null ], [ null, null, null ] ] )//, 2);
+// getLengthOfMissingArray([ [ 'a', 'a', 'a' ], [ 'a', 'a' ], [ 'a', 'a', 'a', 'a' ], [ 'a' ], [ 'a', 'a', 'a', 'a', 'a', 'a' ]] )//, 5);
+// getLengthOfMissingArray([ ])//, 0);
+
+// function numberOfPairs(gloves) {
+//   let glovesSort = gloves.slice(0).sort();;
+//   console.log(glovesSort);
+//   let count = 0;
+//   for(let i = 0; i < glovesSort.length; i++) {
+//     if(glovesSort[i] === glovesSort[i+1]) {
+//       count++;
+//       i++;
+//     } 
+//   }
+//   console.log(count);
+//   return count;
+// }
+// numberOfPairs(['red','red'])//,1])
+// numberOfPairs(['red','green','blue'])//,0],)
+// numberOfPairs(['gray','black','purple','purple','gray','black'])//,3])
+
+// function sortByBit(arr) {
+//   let res = arr.sort((a, b) => a.toString(2).split('1').length - b.toString(2).split('1').length || a - b);
+//   console.log([1, 8, 3, 3, 5, 6, 9, 7]);
+//   console.log(res);
+//   return res;
+// }
+// sortByBit([3, 8, 3, 6, 5, 7, 9, 1])//[1, 8, 3, 3, 5, 6, 9, 7]
+
+
+
+
+
